@@ -1,0 +1,60 @@
+@import "./vars";
+
+// GENERAL PROPERTIES
+
+:root {
+	--cv-font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+	--cv-border-radius: calc(.2rem + .1em);
+	--cv-transition-time: .12s;
+
+	// COLORS
+	--cv-text-color: #{$cv-text-color};
+
+	--cv-primary: #{$cv-primary};
+	--cv-primary-hover: #{adjust-color($cv-primary, $lightness:-10%)};
+	--cv-primary-active: #{adjust-color($cv-primary, $lightness:-20%)};
+	--cv-primary-content: white;
+	--cv-primary-border: none;
+	--cv-primary-focus-box-shadow: 0 0 0 3px #{adjust-color($cv-primary, $alpha:-.5)};
+
+	--cv-secondary: #{$cv-secondary};
+	--cv-secondary-hover: #{adjust-color($cv-secondary, $lightness:-10%)};
+	--cv-secondary-active: #{adjust-color($cv-secondary, $lightness:-20%)};
+	--cv-secondary-content: white;
+	--cv-secondary-border: none;
+	--cv-secondary-focus-box-shadow: 0 0 0 3px #{adjust-color($cv-secondary, $alpha:-.5)};
+
+	--cv-danger: #{$cv-danger};
+	--cv-danger-hover: #{adjust-color($cv-danger, $lightness:-10%)};
+	--cv-danger-active: #{adjust-color($cv-danger, $lightness:-20%)};
+	--cv-danger-content: white;
+	--cv-danger-border: none;
+	--cv-danger-focus-box-shadow: 0 0 0 3px #{adjust-color($cv-danger, $alpha:-.5)};
+
+	--cv-white: white;
+	--cv-white-hover: #{$cv-light};
+	--cv-white-active: #{darken($cv-light, 7%)};
+	--cv-white-content: var(--cv-text-color);
+	--cv-white-border: none;
+	--cv-white-focus-box-shadow: 0 0 0 3px #{adjust-color($cv-primary, $alpha:-.5)};
+
+	--cv-light: #{$cv-light};
+	--cv-light-hover: #{darken($cv-light, 7%)};
+	--cv-light-active: #{darken($cv-light, 14%)};
+	--cv-light-content:  var(--cv-text-color);
+	--cv-light-border: none;
+	--cv-light-focus-box-shadow: 0 0 0 3px #{adjust-color($cv-primary, $alpha:-.5)};
+
+	--cv-dark: #{$cv-dark};
+	--cv-dark-hover: #{darken($cv-dark, 7%)};
+	--cv-dark-active: #{darken($cv-dark, 20%)};
+	--cv-dark-content: white;
+	--cv-dark-border: none;
+	--cv-dark-focus-box-shadow: 0 0 0 3px #{adjust-color($cv-dark, $alpha:-.5)};
+}
+
+@import "./css-vars/vars-buttons";
+
+//:root {
+//	--cv-button-bd-radius: 0;
+//}

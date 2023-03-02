@@ -1,0 +1,23 @@
+{
+  "name": "carnival-css",
+  "version": "1.0.0",
+  "description": "The flexible and adaptable CSS framework.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "open ./dev/index.html && sass --watch scss/index.scss dev/build.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierBover/carnival-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PierBover/carnival-css/issues"
+  },
+  "homepage": "https://github.com/PierBover/carnival-css#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}

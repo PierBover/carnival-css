@@ -1,0 +1,32 @@
+:root {
+	//BOX
+	--cv-button-horizontal-padding: .75em;
+	--cv-button-horizontal-padding-rounded: 1em;
+	--cv-button-base-height: 2.5em;
+
+	// COLORS
+	--cv-button-border: none;
+
+	// TEXT
+	--cv-button-base-font-size: .9rem;
+	--cv-button-text-transform: none;
+	--cv-button-font-weight: 400;
+
+	// ICONS
+	--cv-button-icon-size: 1.1em;
+	--cv-button-icon-margin: .5em;
+
+	// SIZES
+	--cv-button-font-size-mini: .7em;
+	--cv-button-font-size-small: .8em;
+	--cv-button-font-size-large: 1.15em;
+	--cv-button-font-size-huge: 1.3em;
+
+
+	// ETC
+	--cv-button-cursor: pointer;
+	--cv-button-focus-blur: 4px;
+
+	--cv-button-disabled-opacity: .5;
+	--cv-button-disabled-cursor: not-allowed;
+}
