@@ -1,0 +1,58 @@
+@import "./inputs-vars";
+
+input.cnv {
+	all: unset;
+	box-sizing: border-box;
+	//text-align: center;
+	//vertical-align: middle;
+
+	color: var(--cnv-input-color);
+	background: var(--cnv-input-background);
+	border: var(--cnv-input-border);
+	outline: var(--cnv-outline-width) solid transparent;
+
+	// BOX
+	padding: 0 var(--cnv-input-horizontal-padding);
+	border-radius: var(--cnv-input-border-radius, var(--cnv-border-radius));
+	height: var(--cnv-input-height);
+
+	// TEXT
+	font-family: var(--cnv-input-font-family);
+	font-size: var(--cnv-input-font-size);
+	font-weight: var(--cnv-input-font-weight);
+	text-transform: var(--cnv-input-text-transform);
+
+	transition: all var(--cnv-transition-time);
+
+	@each $sizeName in $cnv-sizes {
+		&.#{$sizeName} {
+			font-size: var(--cnv-input-font-size-#{$sizeName});
+		}
+	}
+
+	&:focus-visible {
+		outline: var(--cnv-input-focus-outline);
+		border: var(--cnv-input-focus-border);
+	}
+
+	&:disabled {
+		opacity: var(--cnv-input-disabled-opacity);
+		cursor: var(--cnv-input-disabled-cursor);
+		background: var(--cnv-input-disabled-background);
+	}
+
+	:read-only {}
+}
+
+@each $state in $cnv-validationStates {
+	input.#{$state}, .use-pseudo input:#{$state} {
+		background: var(--cnv-input-#{$state}-background);
+		color: var(--cnv-input-#{$state}-color);
+		border: var(--cnv-input-#{$state}-border);
+
+		&:focus-visible {
+			outline: var(--cnv-input-#{$state}-focus-outline);
+			border: var(--cnv-input-#{$state}-focus-border);
+		}
+	}
+}

@@ -4,7 +4,9 @@
   "description": "The flexible and adaptable CSS framework.",
   "main": "index.js",
   "scripts": {
-    "dev": "open ./dev/index.html && sass --watch scss/index.scss dev/build.css"
+    "dev-sveltekit": "cd site && npm run dev",
+    "dev-css": "sass --watch scss/index.scss site/static/css/carnival.css",
+    "dev": "concurrently 'npm:dev-sveltekit' 'npm:dev-css'"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/PierBover/carnival-css#readme",
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "sass": "^1.58.3"
   }
 }

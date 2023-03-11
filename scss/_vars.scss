@@ -1,9 +1,140 @@
-$cv-colorNames: "primary", "secondary", "danger", "white", "light", "dark";
+//@use "sass:math";
 
-$cv-text-color: #222;
+$cnv-buttonVariantNames: "secondary", "danger", "success", "contrast";
+$cnv-validationStates: "valid", "invalid";
+$cnv-sizes: "mini", "small", "large", "huge";
 
-$cv-primary: #4e3bf5;
-$cv-secondary: #4ab1ff;
-$cv-danger: #e23737;
-$cv-light: #ebecf5;
-$cv-dark: #333545;
+$cnv-color: #36363d !default;
+$cnv-color-invert: white !default;
+
+$cnv-primary: #474ff4 !default;
+$cnv-secondary: #33a7ff !default;
+$cnv-success: #3cb042 !default;
+$cnv-danger: #e23737 !default;
+$cnv-subtle: #f0f0f5 !default;
+
+$cnv-base-colors: (
+	"text": (
+		"25": #f4f4f6,
+		"50": #E9E9EC,
+		"100": #D6D6DB,
+		"200": #ABABB5,
+		"300": #838391,
+		"400": #5B5B67,
+		"500": #36363D,
+		"600": #2B2B31,
+		"700": #222226,
+		"800": #161618,
+		"900": #0C0C0E
+	),
+	"primary": (
+		"25": #f7f7ff,
+		"50": #ECEDFE,
+		"100": #D9DAFD,
+		"200": #B7BAFB,
+		"300": #9096F8,
+		"400": #6A71F6,
+		"500": #474FF4,
+		"600": #0E19EC,
+		"700": #0B13B2,
+		"800": #070D78,
+		"900": #03063A,
+	),
+	"secondary": (
+		"25": #f2f9ff,
+		"50": #EBF6FF,
+		"100": #D6EDFF,
+		"200": #ADDCFF,
+		"300": #85CAFF,
+		"400": #5CB8FF,
+		"500": #33A7FF,
+		"600": #008BF5,
+		"700": #0068B8,
+		"800": #00457A,
+		"900": #00233D
+	),
+	"success": (
+		"25": #f5fff6,
+		"50": #ECF9ED,
+		"100": #D5F1D7,
+		"200": #AFE4B2,
+		"300": #85D689,
+		"400": #5BC761,
+		"500": #3CB042,
+		"600": #308D35,
+		"700": #246B28,
+		"800": #19481B,
+		"900": #0C220D
+	),
+	"danger": (
+		"25": #fff5f5,
+		"50": #FCEDED,
+		"100": #F9D7D7,
+		"200": #F3AFAF,
+		"300": #EE8787,
+		"400": #E85F5F,
+		"500": #E23737,
+		"600": #C41C1C,
+		"700": #931515,
+		"800": #620E0E,
+		"900": #310707
+	)
+);
+
+//@function tint($color, $percentage) {
+//	@return adjust-color($color, $lightness: $percentage);
+//	//@return mix(white, $color, $percentage);
+//}
+
+//@function shade($color, $percentage) {
+//	@return adjust-color($color, $lightness: $percentage);
+//	//@return mix(black, $color, $percentage);
+//}
+
+//@function luminance($color) {
+//	$colors: (
+//		'red': red($color),
+//		'green': green($color),
+//		'blue': blue($color)
+//	);
+
+//	@each $name, $value in $colors {
+//		$adjusted: 0;
+//		$value: $value / 255;
+
+//		@if $value < 0.03928 {
+//			$value: $value / 12.92;
+//		} @else {
+//			$value: ($value + .055) / 1.055;
+//			$value: math.pow($value, 2.4);
+//		}
+
+//		$colors: map-merge($colors, ($name: $value));
+//	}
+
+//	@return (map-get($colors, 'red') * .2126) + (map-get($colors, 'green') * .7152) + (map-get($colors, 'blue') * .0722);
+//}
+
+//:root {
+//	@each $name, $color in $cnv-base-colors {
+//		$values: 20, 40, 60, 80;
+
+//		--cnv-#{$name}: #{$color};
+
+//		$luminance: luminance($color);
+
+//		@debug $luminance;
+
+//		@each $value in $values {
+
+//			//$percentageTint: percentage(math.div($value * $luminance, 100));
+//			//$percentageShade: percentage(math.div($value * $luminance, 100));
+//			$percentageTint: percentage(math.div($value * (1 - $luminance), 100));
+//			$percentageShade: 0 - percentage(math.div($value * (1 - $luminance), 100));
+//			--cnv-#{$name}-tint-#{$value}: #{tint($color, $percentageTint)};
+//			--cnv-#{$name}-shade-#{$value}: #{shade($color, $percentageShade)};
+//			//--cnv-#{$name}-tint-#{$value}: #{adjust-color($color, $lightness:$percentage)};
+//			//--cnv-#{$name}-shade-#{$value}: #{shade($color, $percentage)};
+//		}
+//	}
+//}

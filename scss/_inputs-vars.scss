@@ -1,0 +1,41 @@
+:root {
+	//BOX
+	--cnv-input-horizontal-padding: .6em;
+	--cnv-input-height: 2.5em;
+
+	--cnv-input-color: var(--cnv-color);
+	--cnv-input-border: 1px solid var(--cnv-color-light);
+	--cnv-input-background: white;
+	--cnv-input-focus-outline: var(--cnv-focus-outline);
+	--cnv-input-focus-border: 1px solid var(--cnv-color);
+
+	// TEXT
+	--cnv-input-font-family: var(--cnv-font-family);
+	--cnv-input-font-size: 1rem;
+	--cnv-input-text-transform: none;
+	--cnv-input-font-weight: 400;
+
+	// SIZES
+	--cnv-input-font-size-mini: var(--cnv-size-mini);
+	--cnv-input-font-size-small: var(--cnv-size-small);
+	--cnv-input-font-size-large: var(--cnv-size-large);
+	--cnv-input-font-size-huge: var(--cnv-size-huge);
+
+	--cnv-input-valid-background: white;
+	--cnv-input-valid-color: var(--cnv-color);
+	--cnv-input-valid-border: 1px solid var(--cnv-success);
+	--cnv-input-valid-focus-outline: var(--cnv-success-focus-outline);
+	--cnv-input-valid-focus-border: 1px solid var(--cnv-success);
+
+	--cnv-input-invalid-background: white;
+	--cnv-input-invalid-color: var(--cnv-color);
+	--cnv-input-invalid-border: 1px solid var(--cnv-danger);
+	--cnv-input-invalid-focus-outline: var(--cnv-danger-focus-outline);
+	--cnv-input-invalid-focus-border: 1px solid var(--cnv-danger);
+
+	// ETC
+	--cnv-input-disabled-opacity: .6;
+	--cnv-input-disabled-cursor: not-allowed;
+	--cnv-input-disabled-background: #f6f6f6;
+	--cnv-input-box-shadow: none;
+}

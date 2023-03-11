@@ -1,0 +1,17 @@
+.swatches {
+	display: flex;
+
+	.swatch {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		width: 4rem;
+		height: 4rem;
+		margin-right: .25rem;
+	}
+}
+
+.button-row {
+	margin-bottom: 2rem;
+}

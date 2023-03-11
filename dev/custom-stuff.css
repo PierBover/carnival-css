@@ -1,0 +1,44 @@
+button.cv.pink {
+	--cnv-button-background: linear-gradient(0deg, rgba(217,0,0,1) 0%, rgba(255,200,200,1) 100%);
+	--cnv-button-font-family: Georgia;
+	--cnv-button-font-size: 1rem;
+	--cnv-button-color: white;
+	--cnv-button-focus-outline: 3px solid red;
+	/*--cnv-button-border: 1px solid darkred;*/
+	--cnv-button-height: 1.75em;
+	--cnv-button-box-shadow: 0 3px 5px 0 #aaa;
+	--cnv-button-border-radius: 2em;
+
+	--cnv-button-hover-background: linear-gradient(0deg, rgba(217,0,0,1) 50%, rgba(255,200,200,1) 100%);
+	--cnv-button-hover-color: white;
+}
+
+button.cv.twitter-menu {
+	--cnv-button-font-size: 20px;
+	--cnv-button-color: rgb(15, 20, 25);
+	--cnv-button-icon-margin: 1em;
+	--cnv-button-border-radius: 100px;
+}
+
+button.cv.tweet {
+	width: 15rem;
+	--cnv-button-height: 50px;
+	--cnv-button-background: rgb(29, 155, 240);
+	--cnv-button-color: white;
+	--cnv-button-font-size: 15px;
+	--cnv-button-font-weight: 700;
+	--cnv-button-hover-background: rgb(19, 145, 230);
+	--cnv-button-hover-color: white;
+	--cnv-button-border-radius: 100px;
+}
+
+.palette {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.palette > div {
+	width: 3rem;
+	height: 3rem;
+	margin-right: .5rem;
+}

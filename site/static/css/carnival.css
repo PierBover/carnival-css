@@ -1,7 +1,7 @@
 :root {
   --cnv-font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   --cnv-border-radius: .25rem;
-  --cnv-transition-time: .12s;
+  --cnv-transition: background .25s, opacity .15s, color .25s;
   --cnv-outline-width: 3px;
   --cnv-focus-outline: var(--cnv-outline-width) solid #ebebed;
   --cnv-elements-font-size: 1rem;
@@ -175,7 +175,7 @@ button.cnv {
   font-size: var(--cnv-button-font-size);
   font-weight: var(--cnv-button-font-weight);
   text-transform: var(--cnv-button-text-transform);
-  transition: all var(--cnv-transition-time);
+  transition: var(--cnv-transition);
   cursor: var(--cnv-button-cursor);
   box-shadow: var(--cnv-button-box-shadow);
 }
@@ -483,4 +483,4 @@ input.invalid:focus-visible, .use-pseudo input:invalid:focus-visible {
   border: var(--cnv-input-invalid-focus-border);
 }
 
-/*# sourceMappingURL=build.css.map */
+/*# sourceMappingURL=carnival.css.map */

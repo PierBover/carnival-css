@@ -1,0 +1,119 @@
+:root {
+	//BOX
+	--cnv-button-horizontal-padding: .75em;
+	--cnv-button-height: 2.5em;
+
+	--cnv-button-color: var(--cnv-color-invert);
+	--cnv-button-border: none;
+	--cnv-button-background: var(--cnv-color-primary-500);
+
+	--cnv-button-hover-color: var(--cnv-color-invert);
+	--cnv-button-hover-background: var(--cnv-color-primary-600);
+
+	--cnv-button-focus-outline: 3px solid var(--cnv-color-primary-200);
+	--cnv-button-active-opacity: .75;
+
+	// TEXT
+	--cnv-button-font-family: var(--cnv-font-family);
+	--cnv-button-font-size: var(--cnv-elements-font-size);
+	--cnv-button-text-transform: none;
+	--cnv-button-font-weight: 400;
+
+	// OUTLINED
+	--cnv-button-outlined-color: var(--cnv-color-primary-500);
+	--cnv-button-outlined-border: 1px solid var(--cnv-color-primary-500);
+	--cnv-button-outlined-hover-background: var(--cnv-color-primary-500);
+	--cnv-button-outlined-hover-color: var(--cnv-color-invert);
+
+	// SUBTLE
+	--cnv-button-subtle-color: var(--cnv-color-primary-500);
+	--cnv-button-subtle-background: var(--cnv-color-primary-25);
+	--cnv-button-subtle-hover-background: var(--cnv-color-primary-50);
+
+	// TEXT ONLY
+	--cnv-button-text-only-color: var(--cnv-color-primary-500);
+	--cnv-button-text-only-hover-background: var(--cnv-color-primary-25);
+
+	--cnv-button-transparent-hover-background: #eee;
+	--cnv-button-transparent-hover-color: auto;
+	--cnv-button-round-horizontal-padding: 1em;
+
+	// ICONS
+	--cnv-button-icon-size: 1.25em;
+	--cnv-button-icon-margin: .5em;
+
+	// SIZES
+	--cnv-button-font-size-mini: var(--cnv-size-mini);
+	--cnv-button-font-size-small: var(--cnv-size-small);
+	--cnv-button-font-size-large: var(--cnv-size-large);
+	--cnv-button-font-size-huge: var(--cnv-size-huge);
+
+
+	// ETC
+	--cnv-button-cursor: pointer;
+	--cnv-button-disabled-opacity: .6;
+	--cnv-button-disabled-cursor: not-allowed;
+	--cnv-button-box-shadow: none;
+
+	// VARIANTS
+
+	--cnv-primary-button-color:  var(--cnv-color-invert);
+	--cnv-primary-button-border: none;
+	--cnv-primary-button-background: var(--cnv-primary);
+	--cnv-primary-button-hover-background: #{adjust-color($cnv-primary, $lightness:-10%)};
+	--cnv-primary-button-hover-color:  var(--cnv-color-invert);
+	--cnv-primary-button-outlined-border: 1px solid var(--cnv-primary);
+	--cnv-primary-button-transparent-background: #{adjust-color($cnv-primary, $alpha:-.95)};
+	--cnv-primary-button-transparent-hover-background: #{adjust-color($cnv-primary, $alpha:-.9)};
+	--cnv-primary-button-text-only-hover-background: #{adjust-color($cnv-primary, $alpha:-.95)};
+
+	--cnv-secondary-button-color:  var(--cnv-color-invert);
+	--cnv-secondary-button-border: none;
+	--cnv-secondary-button-background: #{$cnv-secondary};
+	--cnv-secondary-button-hover-background: #{adjust-color($cnv-secondary, $lightness:-8%)};
+	--cnv-secondary-button-hover-color:  var(--cnv-color-invert);
+	--cnv-secondary-button-outlined-border: 1px solid var(--cnv-secondary);
+	--cnv-secondary-button-transparent-background: #{adjust-color($cnv-secondary, $alpha:-.93)};
+	--cnv-secondary-button-transparent-hover-background: #{adjust-color($cnv-secondary, $alpha:-.88)};
+	--cnv-secondary-button-text-only-hover-background: #{adjust-color($cnv-secondary, $alpha:-.93)};
+
+	--cnv-danger-button-color: var(--cnv-color-invert);
+	--cnv-danger-button-border: none;
+	--cnv-danger-button-background: #{$cnv-danger};
+	--cnv-danger-button-hover-background: #{adjust-color($cnv-danger, $lightness:-8%)};
+	--cnv-danger-button-hover-color:  var(--cnv-color-invert);
+	--cnv-danger-button-outlined-border: 1px solid var(--cnv-danger);
+	--cnv-danger-button-transparent-background: #{adjust-color($cnv-danger, $alpha:-.95)};
+	--cnv-danger-button-transparent-hover-background: #{adjust-color($cnv-danger, $alpha:-.90)};
+	--cnv-danger-button-text-only-hover-background: #{adjust-color($cnv-danger, $alpha:-.95)};
+
+	--cnv-success-button-color: var(--cnv-color-invert);
+	--cnv-success-button-border: none;
+	--cnv-success-button-background: #{$cnv-success};
+	--cnv-success-button-hover-background: #{adjust-color($cnv-success, $lightness:-8%)};
+	--cnv-success-button-hover-color:  var(--cnv-color-invert);
+	--cnv-success-button-outlined-border: 1px solid var(--cnv-success);
+	--cnv-success-button-transparent-background: #{adjust-color($cnv-success, $alpha:-.95)};
+	--cnv-success-button-transparent-hover-background: #{adjust-color($cnv-success, $alpha:-.90)};
+	--cnv-success-button-text-only-hover-background: #{adjust-color($cnv-success, $alpha:-.95)};
+
+	--cnv-subtle-button-background: #{$cnv-subtle};
+	--cnv-subtle-button-color: var(--cnv-color);
+	--cnv-subtle-button-border: none;
+	--cnv-subtle-button-hover-background: #{darken($cnv-subtle, 3%)};
+	--cnv-subtle-button-hover-color: var(--cnv-color);
+	--cnv-subtle-button-outlined-border: 1px solid var(--cnv-subtle);
+	--cnv-subtle-button-transparent-background: #{adjust-color($cnv-color, $alpha:-.97)};
+	--cnv-subtle-button-transparent-hover-background: #{adjust-color($cnv-color, $alpha:-.94)};
+	--cnv-subtle-button-text-only-hover-background: #{adjust-color($cnv-color, $alpha:-.97)};
+
+	--cnv-invert-button-border: none;
+	--cnv-invert-button-color: var(--cnv-color-invert);
+	--cnv-invert-button-background: var(--cnv-color);
+	--cnv-invert-button-hover-background: #{darken($cnv-color, 20%)};
+	--cnv-invert-button-hover-color: var(--cnv-color-invert);
+	--cnv-invert-button-outlined-border: 1px solid var(--cnv-color);
+	--cnv-invert-button-transparent-background: #{adjust-color($cnv-color, $alpha:-.93)};
+	--cnv-invert-button-transparent-hover-background: #{adjust-color($cnv-color, $alpha:-.88)};
+	--cnv-invert-button-text-only-hover-background: #{adjust-color($cnv-color, $alpha:-.93)};
+}
